@@ -5,7 +5,7 @@ Dark theme only. Mostly red, orange, yellow, grey, and black color palette.
 
 Built on Obsidian v0.12.19.
 
-Modified from the gruvbox and [Atom](https://github.com/kognise/obsidian-atom) themes.
+Modified from the [gruvbox](https://github.com/insanum/obsidian_gruvbox) and [Atom](https://github.com/kognise/obsidian-atom) themes.
 Created with occasional assistance from the [Obsidian community discord](https://obsidian.md/community).
 
 ### Installation
