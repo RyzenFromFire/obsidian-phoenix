@@ -31,7 +31,7 @@ Adapted from the gruvbox and Atom themes.
     /* My Custom Colors */
 
     /* Background Colors */
-    --r-dark0: var(--dark0-hard);
+    --r-dark0: #212121;
     --r-dark1: #191717;
     --r-dark2: #161414;
 
