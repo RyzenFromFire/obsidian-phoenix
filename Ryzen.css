@@ -87,8 +87,8 @@ Adapted from the gruvbox and Atom themes.
 /* light theme is bad and not supported */
 
 :root {
-  --default-font: SF Pro Text, SF Mono, Monospace, Segoe UI;
-  --editor-font: SF Pro Text, SF Mono, Monospace, Segoe UI;
+  --default-font: -apple-system, BlinkMacSystemFont, Monospace, Segoe UI;
+  --editor-font: -apple-system, BlinkMacSystemFont, SF Mono, Monospace, Segoe UI;
 }
 
 .markdown-source-view {
