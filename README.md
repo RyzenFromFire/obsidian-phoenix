@@ -13,8 +13,6 @@ Created with occasional assistance from the [Obsidian community discord](https:/
 2. In Obsidian, under `Appearance` settings, click the `Manage` button under the `Themes` entry, and click `Use` under this theme.
 
 ### Addons for Optimal Experience
-The font I use for this is [San Francisco (but for Windows)](https://github.com/blaisck/sfwin), but Monospace comes close.
-
 I use [CodeMirror Options](https://github.com/nothingislost/obsidian-codemirror-options) for some limited live preview/WYSIWYG improvements. Settings: Hide Markdown Tokens on, `task` removed from hidden token list. Style checkboxes off. Render embeds, math, codeblocks on. All settings without warnings under Syntax Highlighting on.
 
 I also use my [personal checkboxes snippet](https://github.com/RyzenFromFire/ryzen-checkboxes), which was enabled for the demo screenshot and which I recommend using.
