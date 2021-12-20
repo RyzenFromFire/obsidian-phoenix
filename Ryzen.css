@@ -88,7 +88,7 @@ Adapted from the gruvbox and Atom themes.
 
 :root {
   --default-font: -apple-system, BlinkMacSystemFont, Monospace, Segoe UI;
-  --editor-font: -apple-system, BlinkMacSystemFont, SF Mono, Monospace, Segoe UI;
+  --editor-font: -apple-system, BlinkMacSystemFont, Monospace, Segoe UI;
 }
 
 .markdown-source-view {
