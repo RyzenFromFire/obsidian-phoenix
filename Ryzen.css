@@ -140,31 +140,40 @@ strong
     font-weight: 600 !important;
 }
 
-a,
-.cm-hmd-internal-link
+.markdown-preview-view a.internal-link,
+.markdown-preview-view a.external-link,
+.cm-s-obsidian span.cm-hmd-internal-link,
+/*.cm-s-obsidian span.cm-url*/
 {
-    color: var(--text-a) !important;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
-a:hover,
-.cm-hmd-internal-link:hover
-{
-    color: var(--text-a-hover) !important;
-    text-decoration: none !important;
+.markdown-preview-view a.internal-link,
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link {
+    color: var(--text-a);
+    text-decoration: none;
 }
 
-/* url/external link */
-a,
-.cm-url {
-  color: var(--text-link) !important;
+a.internal-link:hover,
+.cm-s-obsidian span.cm-hmd-internal-link:hover {
+    color: var(--text-a-hover);
+    text-decoration: none;
 }
 
-/* url/external link hover */
-a:hover,
-.cm-url:hover {
-  color: var(--text-link-hover) !important;
-}*/
+.cm-s-obsidian span.cm-url {
+  color: var(--text-link);
+}
+
+.markdown-preview-view a.external-link {
+  color: var(--text-link);
+  text-decoration: none;
+}
+
+.markdown-preview-view a.external-link:hover,
+.cm-s-obsidian span.cm-url:hover {
+  color: var(--text-link-hover);
+}
 
 a.tag, a.tag:hover {
   color: var(--text-tag) !important;
