@@ -12,14 +12,10 @@ Created with occasional assistance from the [Obsidian community discord](https:/
 1. Download [Ryzen.css](https://github.com/RyzenFromFire/ryzen-theme-obsidian/blob/main/Ryzen.css) and place in your `.obsidian\themes` folder.
 2. In Obsidian, under `Appearance` settings, click the `Manage` button under the `Themes` entry, and click `Use` under this theme.
 
-### Addons for Optimal Experience
-I use [CodeMirror Options](https://github.com/nothingislost/obsidian-codemirror-options) for some limited live preview/WYSIWYG improvements. Settings: Hide Markdown Tokens on, `task` removed from hidden token list. Style checkboxes off. Render embeds, math, codeblocks on. All settings without warnings under Syntax Highlighting on.
+### Recommended Snippets
+I recommend using the following snippets for the best experience:
 
-I also use [my checkboxes snippet](https://github.com/RyzenFromFire/ryzen-checkboxes), which was enabled for the demo screenshot and which I recommend using.
-
-Other snippets recommended for use with this theme:
-
-[Better Bullet Points in Edit Mode](https://github.com/kmaasrud/awesome-obsidian/blob/master/code/css-snippets/better-bullet-points-in-edit-mode.css)
+[My checkboxes snippet](https://github.com/RyzenFromFire/ryzen-checkboxes), which was enabled for the demo screenshot.
 
 [Custom Icons Differing Files and Folders](https://github.com/kmaasrud/awesome-obsidian/blob/master/code/css-snippets/custom-icons-differing-files-and-folders.css)
 
