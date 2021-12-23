@@ -15,7 +15,7 @@ Created with occasional assistance from the [Obsidian community discord](https:/
 ### Addons for Optimal Experience
 I use [CodeMirror Options](https://github.com/nothingislost/obsidian-codemirror-options) for some limited live preview/WYSIWYG improvements. Settings: Hide Markdown Tokens on, `task` removed from hidden token list. Style checkboxes off. Render embeds, math, codeblocks on. All settings without warnings under Syntax Highlighting on.
 
-I also use my [personal checkboxes snippet](https://github.com/RyzenFromFire/ryzen-checkboxes), which was enabled for the demo screenshot and which I recommend using.
+I also use [my checkboxes snippet](https://github.com/RyzenFromFire/ryzen-checkboxes), which was enabled for the demo screenshot and which I recommend using.
 
 Other snippets recommended for use with this theme:
 
