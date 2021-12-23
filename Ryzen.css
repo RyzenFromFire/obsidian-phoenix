@@ -118,16 +118,6 @@ Adapted from the gruvbox and Atom themes.
 {
     color: var(--text-a-hover) !important;
 }
-/*
-.graph-view.color-fill
-{
-    color: var(--background-secondary);
-}
-.graph-view.color-line
-{
-  color: var(--background-modifier-border);
-}
-*/
 
 html,
 body
@@ -140,11 +130,24 @@ strong
     font-weight: 600 !important;
 }
 
+/* List Indentations */
+ul {
+  padding-left:15px;
+}
+
+ol {
+  padding-left:15px;
+}
+
 .markdown-preview-view a.internal-link,
 .markdown-preview-view a.external-link,
 .cm-s-obsidian span.cm-hmd-internal-link,
-/*.cm-s-obsidian span.cm-url*/
 {
+    text-decoration: none;
+}
+
+/* Fix for internal link appearing with underline in edit mode, hopefully doesn't break anything else */
+.markdown-source-view.mod-cm6 .cm-underline {
     text-decoration: none;
 }
 
