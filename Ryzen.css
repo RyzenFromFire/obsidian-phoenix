@@ -29,6 +29,7 @@ Adapted from the gruvbox and Atom themes.
     --faded-yellow:   #b57614;
 
     /* My Custom Colors */
+    --platinum: #cccccc;
 
     /* Background Colors */
     --r-dark0: #212121;
@@ -58,6 +59,7 @@ Adapted from the gruvbox and Atom themes.
     --background-secondary-alt:   var(--r-dark2);
     --text-normal:                var(--standard-text);
     --text-faint:                 var(--scorpion);
+    --text-platinum:              var(--platinum);
     --text-title-h1:              var(--dark-red);
     --text-title-h2:              var(--red-orange);
     --text-title-h3:              var(--deep-orange);
@@ -517,4 +519,9 @@ thead
     font-weight: 800 !important;
     margin: 0;
     color: var(--text-accent) !important;
+}
+
+/* ccard text coloring */
+.cute-card-view p {
+    color: var(--text-platinum) !important;
 }
