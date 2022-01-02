@@ -7,6 +7,11 @@ Adapted from the gruvbox and Atom themes.
 
 :root
 {
+    /* Custom Config */
+
+    /* Maximum Height (px) for note embeds (probably applies to other embeds too) */
+    --max-embed-height: 1000px; /* Obsidian Default is 600px */
+
     /* Gruvbox Colors */
     --dark0-hard:     #1d2021;
     --dark0:          #282828;
@@ -524,4 +529,9 @@ thead
 /* ccard text coloring */
 .cute-card-view p {
     color: var(--text-platinum) !important;
+}
+
+/* fix notes having scrollbar when they could just not */
+.markdown-embed-content {
+  max-height: var(--max-embed-height);
 }
