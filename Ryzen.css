@@ -510,3 +510,11 @@ thead
 {
     fill: var(--dark3) !important;
 }
+
+/* ccard font size fix for Folder Cards plugin */
+.cute-card-view h1 {
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+    margin: 0;
+    color: var(--text-accent) !important;
+}
