@@ -35,6 +35,7 @@ Adapted from the gruvbox and Atom themes.
 
     /* My Custom Colors */
     --platinum: #cccccc;
+    --r-dark0-accent: #1e1e1e;
 
     /* Background Colors */
     --r-dark0: #212121;
@@ -534,4 +535,18 @@ thead
 /* fix notes having scrollbar when they could just not */
 .markdown-embed-content {
   max-height: var(--max-embed-height);
+}
+
+/* remove margins/some padding from embedded notes */
+.markdown-source-view .markdown-embed,
+.markdown-preview-view .markdown-embed {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/* change border color of note embed */
+.markdown-source-view .markdown-embed {
+  border: 2px solid var(--dark0-soft);
 }
