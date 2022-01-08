@@ -568,3 +568,13 @@ thead
 .markdown-source-view .markdown-embed {
   border: 2px solid var(--dark0-soft);
 }
+
+/* increase tex size */
+.MJX-TEX {
+	font-size: 115%;
+}
+
+/* reduce top and bottom margins on Admonitions */
+.admonition {
+  margin: 0.1em 0 !important;
+}
