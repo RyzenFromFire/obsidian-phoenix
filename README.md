@@ -24,7 +24,7 @@ I recommend using the following snippets for the best experience:
 
 ### Screenshots
 ###### Edit Mode
-![screenshot_edit_mode.png](https://github.com/RyzenFromFire/ryzen-theme-obsidian/blob/main/screenshot_edit_mode.png)
+![screenshot_edit_mode.png](https://github.com/RyzenFromFire/obsidian-phoenix/blob/main/screenshot_edit_mode.png)
 
 ###### Preview Mode
-![screenshot_preview_mode.png](https://github.com/RyzenFromFire/ryzen-theme-obsidian/blob/main/screenshot_preview_mode.png)
+![screenshot_preview_mode.png](https://github.com/RyzenFromFire/obsidian-phoenix/blob/main/screenshot_preview_mode.png)
