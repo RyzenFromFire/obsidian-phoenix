@@ -9,8 +9,8 @@ Modified from the [gruvbox](https://github.com/insanum/obsidian_gruvbox) and [At
 Created with occasional assistance from the [Obsidian community discord](https://obsidian.md/community).
 
 ### Installation
-1. Download [Ryzen.css](https://github.com/RyzenFromFire/ryzen-theme-obsidian/blob/main/Ryzen.css) and place in your `.obsidian\themes` folder.
-2. In Obsidian, under `Appearance` settings, click the `Manage` button under the `Themes` entry, and click `Use` under this theme.
+1. Download the `Phoenix` folder and place it in your `.obsidian\themes` folder.
+2. In Obsidian, under `Appearance` settings, under the `Themes` entry, select `Phoenix` from the dropdown menu.
 
 ### Recommended Snippets and Plugins
 I recommend using the following snippets for the best experience:
