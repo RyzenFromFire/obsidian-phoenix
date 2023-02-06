@@ -14,9 +14,9 @@ Created with occasional assistance from the [Obsidian community discord](https:/
 
 ### Recommended Snippets
 I recommend using the following snippets for the best experience:
-- [Phoenix Checkboxes](https://github.com/RyzenFromFire/phoenix-checkboxes)
-- [Phoenix Print](https://github.com/RyzenFromFire/phoenix-print)
-- [Phoenix File Outlines](https://github.com/RyzenFromFire/phoenix-file-outlines)
+- [Phoenix Checkboxes](https://github.com/RyzenFromFire/obsidian-phoenix-checkboxes)
+- [Phoenix Print](https://github.com/RyzenFromFire/obsidian-phoenix-print)
+- [Phoenix File Outlines](https://github.com/RyzenFromFire/obsidian-phoenix-outlines)
 - [Custom Icons Differing Files and Folders](https://github.com/kmaasrud/awesome-obsidian/blob/master/code/css-snippets/custom-icons-differing-files-and-folders.css)
 - [Subtler Folding Gutter Arrows](https://github.com/kmaasrud/awesome-obsidian/blob/master/code/css-snippets/subtler-folding-gutter-arrows.css)
 
