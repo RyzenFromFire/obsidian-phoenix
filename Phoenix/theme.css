@@ -31,7 +31,7 @@ Adapted from the gruvbox and Atom themes.
     --light4:         #a89984;
 
     --bright-red:     #fb4934;
-    --bright-orange-v:  #fe8019;
+    --bright-orange-v:#fe8019;
     --bright-yellow:  #fabd2f;
 
     --neutral-red:    #cc241d;
@@ -43,33 +43,34 @@ Adapted from the gruvbox and Atom themes.
     --faded-yellow:   #b57614;
 
     /* My Custom Colors */
-    --platinum: #cccccc;
+    --platinum:       #cccccc;
     --r-dark0-accent: #1e1e1e;
-    --r-gray: #9d8f82;
-    --r-gray2: #a89c90;
-    --r-gray3: #b3ab9e;
-    --r-light0: #e7cfb8;
-    --r-light2: #d0baa6;
-    --r-light2-soft: #c4b09c;
-    --r-light3: #b9a693;
+    --r-gray:         #9d8f82;
+    --r-gray2:        #a89c90;
+    --r-gray3:        #b3ab9e;
+    --r-light0:       #e7cfb8;
+    --r-light2:       #d0baa6;
+    --r-light2-soft:  #c4b09c;
+    --r-light3:       #b9a693;
 
     /* Background Colors */
-    --r-dark0: #212121;
-    --r-dark1: #191717;
-    --r-dark2: #161414;
+    --r-dark0:        #212121;
+    --r-dark1:        #191717;
+    --r-dark2:        #161414;
 
-    --standard-text: #eadad9;
-    --dark-red: #bc0104;
-    --red-orange: #cd2b11;
-    --deep-orange: #ed5b0f;
-    --bright-orange: #fe750e;
-    --yellow-orange: #fe9109;
-    --dark-orange: #d5520e;
-    --meteor: #72504b;
-    --gunmetal: #534f4e;
-    --scorpion: #625e5e; /* "scorpion" grey according to some color picker site */
-    --code-orange: #b46629; /* this is the same color IntelliJ uses to color keywords in Java */
-    --test-green: #00ff00; /* for testing purposes */
+    --standard-text:  #eadad9;
+    --dark-red:       #bc0104;
+    --red-orange:     #c52d0a;
+    --red-orange2:    #cd2b11;
+    --deep-orange:    #ed5b0f;
+    --bright-orange:  #fe750e;
+    --yellow-orange:  #fe9109;
+    --dark-orange:    #d5520e;
+    --meteor:         #72504b;
+    --gunmetal:       #534f4e;
+    --scorpion:       #625e5e; /* "scorpion" grey according to some color picker site */
+    --code-orange:    #b46629; /* this is the same color IntelliJ uses to color keywords in Java */
+    --test-green:     #00ff00; /* for testing purposes */
 }
 
 /*
