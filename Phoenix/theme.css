@@ -117,6 +117,7 @@ ______  ___  ______ _   __
     --text-tag:                   var(--faded-orange);
     --text-card:                  var(--r-light2-soft);
     --default-codeblock: #1a1a1a; /* Obsidian default codeblock color */
+    --p-spacing: 0.25rem;
 }
 
 /*
@@ -401,6 +402,11 @@ thead
 .HyperMD-table-row-0
 {
     /* padding-top: 4px !important; */
+}
+
+table,
+.markdown-rendered table {
+  margin-top: 0px;
 }
 
 .CodeMirror-foldgutter-folded,
