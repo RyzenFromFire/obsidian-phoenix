@@ -3,7 +3,6 @@ Phoenix Theme for Obsidian by RyzenFromFire
 Adapted from the gruvbox and Atom themes.
 */
 
-
 :root
 {
     /* Custom Config */
@@ -12,65 +11,76 @@ Adapted from the gruvbox and Atom themes.
     --max-embed-height: 1000px; /* Obsidian Default is 600px */
 
     /* Gruvbox Colors */
-    --dark0-hard:     #1d2021;
-    --dark0:          #282828;
-    --dark0-soft:     #32302f;
-    --dark1:          #3c3836;
-    --dark2:          #504945;
-    --dark3:          #665c54;
-    --dark4:          #7c6f64;
+    --dark0-hard:         #1d2021;
+    --dark0:              #282828;
+    --dark0-soft:         #32302f;
+    --dark1:              #3c3836;
+    --dark2:              #504945;
+    --dark3:              #665c54;
+    --dark4:              #7c6f64;
 
-    --gray:           #928374;
+    --gray:               #928374;
 
-    --light0-hard:    #f9f5d7;
-    --light0:         #fbf1c7;
-    --light0-soft:    #f2e5bc;
-    --light1:         #ebdbb2;
-    --light2:         #d5c4a1;
-    --light3:         #bdae93;
-    --light4:         #a89984;
+    --light0-hard:        #f9f5d7;
+    --light0:             #fbf1c7;
+    --light0-soft:        #f2e5bc;
+    --light1:             #ebdbb2;
+    --light2:             #d5c4a1;
+    --light3:             #bdae93;
+    --light4:             #a89984;
 
-    --bright-red:     #fb4934;
-    --bright-orange-v:#fe8019;
-    --bright-yellow:  #fabd2f;
+    --bright-red:         #fb4934;
+    --bright-orange-v:    #fe8019;
+    --bright-yellow-v:    #fabd2f;
 
-    --neutral-red:    #cc241d;
-    --neutral-orange: #d65d0e;
-    --neutral-yellow: #d79921;
+    --neutral-red:        #cc241d;
+    --neutral-orange:     #d65d0e;
+    --neutral-yellow:     #d79921;
 
-    --faded-red:      #9d0006;
-    --faded-orange:   #af3a03;
-    --faded-yellow:   #b57614;
+    --faded-red:          #9d0006;
+    --faded-orange:       #af3a03;
+    --faded-yellow:       #b57614;
 
     /* My Custom Colors */
-    --platinum:       #cccccc;
-    --r-dark0-accent: #1e1e1e;
-    --r-gray:         #9d8f82;
-    --r-gray2:        #a89c90;
-    --r-gray3:        #b3ab9e;
-    --r-light0:       #e7cfb8;
-    --r-light2:       #d0baa6;
-    --r-light2-soft:  #c4b09c;
-    --r-light3:       #b9a693;
+    --platinum:           #cccccc;
+    --r-dark0-accent:     #1e1e1e;
+    --r-gray:             #9d8f82;
+    --r-gray2:            #a89c90;
+    --r-gray3:            #b3ab9e;
+    --r-light0:           #e7cfb8;
+    --r-light2:           #d0baa6;
+    --r-light2-soft:      #c4b09c;
+    --r-light3:           #b9a693;
+    --r-light4:           #a79584;
 
     /* Background Colors */
-    --r-dark0:        #212121;
-    --r-dark1:        #191717;
-    --r-dark2:        #161414;
+    --r-dark0:            #212121;
+    --r-dark1:            #191717;
+    --r-dark2:            #161414;
 
-    --standard-text:  #eadad9;
-    --dark-red:       #bc0104;
-    --red-orange:     #c52d0a;
-    --red-orange2:    #cd2b11;
-    --deep-orange:    #ed5b0f;
-    --bright-orange:  #fe750e;
-    --yellow-orange:  #fe9109;
-    --dark-orange:    #d5520e;
-    --meteor:         #72504b;
-    --gunmetal:       #534f4e;
-    --scorpion:       #625e5e; /* "scorpion" grey according to some color picker site */
-    --code-orange:    #b46629; /* this is the same color IntelliJ uses to color keywords in Java */
-    --test-green:     #00ff00; /* for testing purposes */
+    /* Text, Header, and Code Colors */
+    --r-standard-text:    #eadad9;
+    --r-dark-red:         #bc0104; /* H1 */
+    --r-red-orange:       #c52d0a; /* Old H2 */
+    --r-orange:           #ea4f0d; /* New H2 */
+    --r-deep-orange:      #ed5b0f; /* Old H3 */
+    --r-bright-orange:    #fe750e; /* New H3, Old H4 */
+    --r-yellow-orange:    #fe9109; /* Old H5 */
+    --r-bright-yellow:    #fea30f; /* New H4 */
+    --r-yellow-green:     #c0c90a; /* New H5 */
+    --r-mist-energy-blue: #27cac7; /* New H6 */ /* If you get this reference, o7 */
+    --r-dark-orange:      #d5520e; 
+    --r-meteor:           #72504b;
+    --r-gunmetal:         #534f4e;
+    --r-scorpion:         #625e5e; /* "scorpion" grey according to some color picker site */
+    --code-orange:        #b46629; /* this is the same color IntelliJ uses to color keywords in Java */
+    --code-light-gray:    #cccccc; /* this is the standard text color in VSCode */
+    --obsidian-codeblock: #1a1a1a; /* Obsidian default codeblock color */
+    --test-green:         #00ff00; /* for testing purposes */
+    --r-bg-highlight:     color-mix(in srgb, var(--r-yellow-orange) 50%, transparent);
+    --r-bg-selection:     color-mix(in srgb, var(--r-dark-orange) 25%, transparent);
+    --r-pdf-highlight:    var(--r-bright-orange);
+
 }
 
 /*
@@ -88,36 +98,39 @@ ______  ___  ______ _   __
     --background-primary-alt:     var(--dark0);
     --background-secondary:       var(--r-dark1);
     --background-secondary-alt:   var(--r-dark2);
-    --text-normal:                var(--standard-text);
-    --text-faint:                 var(--scorpion);
+    --text-normal:                var(--r-standard-text);
+    --text-faint:                 var(--r-scorpion);
+    --text-muted:                 var(--color-base-70);
     --text-platinum:              var(--platinum);
-    --text-title-h1:              var(--dark-red);
-    --text-title-h2:              var(--red-orange);
-    --text-title-h3:              var(--deep-orange);
-    --text-title-h4:              var(--bright-orange);
-    --text-title-h5:              var(--yellow-orange);
-    --text-title-h6:              var(--meteor);
-    --text-link:                  var(--dark-orange);
-    --text-link-hover:            var(--deep-orange);
-    --text-a:                     var(--bright-orange); /* also controls color of sidebar icons when hovered */
-    --text-a-hover:               var(--yellow-orange);
-    --text-mark:                  rgba(215, 153, 33, 0.4); /* neutral-yellow */
-    --pre-code:                   var(--default-codeblock);
-    --text-highlight-bg:          rgba(254, 145, 9, 0.5); /* yellow-orange */
-    --interactive-accent:         var(--deep-orange);
+    --text-title-h1:              var(--r-dark-red);
+    --text-title-h2:              var(--r-orange);
+    --text-title-h3:              var(--r-bright-orange);
+    --text-title-h4:              var(--r-bright-yellow);
+    --text-title-h5:              var(--r-yellow-green);
+    --text-title-h6:              var(--r-mist-energy-blue);
+    --text-link:                  var(--r-dark-orange);
+    --text-link-hover:            var(--r-deep-orange);
+    --text-a:                     var(--r-bright-orange); /* also controls color of sidebar icons when hovered */
+    --text-a-hover:               var(--r-yellow-orange);
+    --text-mark:                  var(--r-bg-highlight);
+    --text-highlight-bg:          var(--r-bg-highlight);
+    --interactive-accent:         var(--r-deep-orange);
     --interactive-before:         var(--dark4);
-    --background-modifier-border: var(--gunmetal); /* very thin border around edge, and also file structure hierarchy */
-    --text-accent:                var(--bright-orange);
-    --text-accent-hover:          var(--yellow-orange);
-    --interactive-accent-rgb:     var(--bright-orange);
-    --inline-code:                var(--code-orange); /* text in inline code, edit and preview */
-    --code-block:                 var(--code-orange); /* text in preview mode from codeblock */
-    --vim-cursor:                 var(--bright-orange);
-    --text-selection:             rgba(213, 82, 14, 0.25);
-    --text-tag:                   var(--faded-orange);
+    --background-modifier-border: var(--r-gunmetal); /* very thin border around edge, and also file structure hierarchy */
+    --text-accent:                var(--r-bright-orange);
+    --text-accent-hover:          var(--r-yellow-orange);
+    --interactive-accent-rgb:     var(--r-bright-orange);
+    --inline-code:                var(--code-light-gray); /* text in inline code, edit and preview */
+    --code-block:                 var(--code-light-gray); /* text in preview mode from codeblock */
+    --code-normal:                var(--code-light-gray);
+    --default-codeblock:          var(--obsidian-codeblock); /* codeblock background color */
+    --pre-code:                   var(--default-codeblock); /* inline code background color */
+    --vim-cursor:                 var(--r-bright-orange);
+    --text-selection:             var(--r-bg-selection);
+    --text-tag:                   var(--r-bright-orange);
     --text-card:                  var(--r-light2-soft);
-    --default-codeblock: #1a1a1a; /* Obsidian default codeblock color */
-    --p-spacing: 0.25rem;
+    --status-bar-background:      var(--background-secondary);
+    --interactive-normal:         var(--color-base-30);
 }
 
 /*
@@ -132,38 +145,41 @@ ______  ___  ______ _   __
 .theme-light {
   --background-primary:         var(--r-light0);
   --background-primary-alt:     var(--light0);
-  --background-secondary:       var(--r-light1);
-  --background-secondary-alt:   var(--r-light2);
-  --text-normal:                var(--r-dark0);
-  --text-faint:                 var(--scorpion);
+  --background-secondary:       var(--r-light2);
+  --background-secondary-alt:   var(--r-light3);
+  --text-normal:                var(--dark0-soft);
+  --text-faint:                 var(--dark1);
+  --text-muted:                 var(--dark1);
   --text-platinum:              var(--platinum);
-  --text-title-h1:              var(--dark-red);
-  --text-title-h2:              var(--red-orange);
-  --text-title-h3:              var(--deep-orange);
-  --text-title-h4:              var(--bright-orange);
-  --text-title-h5:              var(--yellow-orange);
-  --text-title-h6:              var(--meteor);
-  --text-link:                  var(--dark-orange);
-  --text-link-hover:            var(--deep-orange);
-  --text-a:                     var(--bright-orange); /* also controls color of sidebar icons when hovered */
-  --text-a-hover:               var(--yellow-orange);
-  --text-mark:                  rgba(215, 153, 33, 0.4); /* neutral-yellow */
-  --pre-code:                   var(--r-light2-soft);
-  --text-highlight-bg:          rgba(254, 145, 9, 0.5); /* yellow-orange */
-  --interactive-accent:         var(--deep-orange);
+  --text-title-h1:              var(--r-dark-red);
+  --text-title-h2:              var(--r-orange);
+  --text-title-h3:              var(--r-bright-orange);
+  --text-title-h4:              var(--r-bright-yellow);
+  --text-title-h5:              var(--r-yellow-green);
+  --text-title-h6:              var(--r-mist-energy-blue);
+  --text-link:                  var(--r-dark-orange);
+  --text-link-hover:            var(--r-deep-orange);
+  --text-a:                     var(--r-bright-orange); /* also controls color of sidebar icons when hovered */
+  --text-a-hover:               var(--r-yellow-orange);
+  --text-mark:                  var(--r-bg-highlight);
+  --text-highlight-bg:          var(--r-bg-highlight);
+  --interactive-accent:         var(--r-deep-orange);
   --interactive-before:         var(--light4);
-  --background-modifier-border: var(--gunmetal); /* very thin border around edge, and also file structure hierarchy */
-  --text-accent:                var(--bright-orange);
-  --text-accent-hover:          var(--yellow-orange);
-  --interactive-accent-rgb:     var(--bright-orange);
-  --inline-code:                var(--red-orange); /* text in inline code, edit and preview */
-  --code-block:                 var(--code-orange); /* text in preview mode from codeblock */
-  --vim-cursor:                 var(--bright-orange);
-  --text-selection:             rgba(213, 82, 14, 0.25);
-  --text-tag:                   var(--faded-orange);
+  --background-modifier-border: var(--r-gunmetal); /* very thin border around edge, and also file structure hierarchy */
+  --text-accent:                var(--r-bright-orange);
+  --text-accent-hover:          var(--r-yellow-orange);
+  --interactive-accent-rgb:     var(--r-bright-orange);
+  --inline-code:                var(--r-dark2); /* text in inline code, edit and preview */
+  --code-block:                 var(--r-dark2); /* text in preview mode from codeblock */
+  --code-normal:                var(--r-dark2);
+  --default-codeblock:          var(--r-light3); /* codeblock background color */
+  --pre-code:                   var(--default-codeblock); /* inline code background color */
+  --vim-cursor:                 var(--r-bright-orange);
+  --text-selection:             var(--r-bg-selection);
+  --text-tag:                   var(--r-deep-orange);
   --text-card:                  var(--r-dark2);
-  --default-codeblock:          var(--r-light3);
-  --status-bar-background:      var(--r-light2-soft)
+  --status-bar-background:      var(--r-light2-soft);
+  --interactive-normal:         var(--light1);
 }
 
 /* 
@@ -179,12 +195,13 @@ ______  ___  ______ _   __
   /* font size variables */
   --h1-size: 2.2em;
   --h2-size: 2.0em;
-  --h3-size: 1.8em;
+  --h3-size: 1.85em;
   --h4-size: 1.6em;
-  --h5-size: 1.4em;
-  --h6-size: 1.2em;
+  --h5-size: 1.47em;
+  --h6-size: 1.35em;
 
   --list-indent: 1em;
+  --p-spacing: 0.25rem;
 
   /* Fix issues with hovering generating underlines */
   --link-decoration: none;
@@ -193,16 +210,36 @@ ______  ___  ______ _   __
   --link-external-decoration-hover: none;
   --link-unresolved-decoration: none;
   --link-unresolved-decoration-hover: none;
+
+  /* Heading Link Trickery */
+  /* color-mix syntax: color-mix(in colorspace, color1 %-to-mix, color2)*/
+  --hx-link-ul-transparency-pct: 33%;
+  --h1-link-ul-color: color-mix(in srgb, var(--text-title-h1) var(--hx-link-ul-transparency-pct), transparent);
+  --h2-link-ul-color: color-mix(in srgb, var(--text-title-h2) var(--hx-link-ul-transparency-pct), transparent);
+  --h3-link-ul-color: color-mix(in srgb, var(--text-title-h3) var(--hx-link-ul-transparency-pct), transparent);
+  --h4-link-ul-color: color-mix(in srgb, var(--text-title-h4) var(--hx-link-ul-transparency-pct), transparent);
+  --h5-link-ul-color: color-mix(in srgb, var(--text-title-h5) var(--hx-link-ul-transparency-pct), transparent);
+  --h6-link-ul-color: color-mix(in srgb, var(--text-title-h6) var(--hx-link-ul-transparency-pct), transparent);
+
+  --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, var(--text-title-h1));
+  --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, var(--text-title-h2));
+  --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, var(--text-title-h3));
+  --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, var(--text-title-h4));
+  --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, var(--text-title-h5));
+  --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, var(--text-title-h6));
 } 
 
-
-
 :root {
-  --default-font: -apple-system, BlinkMacSystemFont, SF Pro Text, SF Mono, Monospace, Segoe UI;
-  --editor-font: -apple-system, BlinkMacSystemFont, SF Pro Text, SF Mono, Monospace, Segoe UI;
-  --font-monospace: JetBrains Mono, Monospace, Segoe UI;
+  --default-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
+  --editor-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
+  --font-monospace: JetBrains Mono, Liberation Mono, Monospace, Courier New;
   --size-normal: 16px;
   --size-code: 14.4px;
+}
+
+/* Fix highlighting in PDF */
+.pdf-container {
+  --text-selection: var(--r-pdf-highlight); /* Yes, this has no transparency -- it does still appear translucent in the PDF viewer. */
 }
 
 .markdown-source-view {
@@ -233,12 +270,6 @@ ______  ___  ______ _   __
     color: var(--text-a-hover) !important;
 }
 
-html,
-body
-{
-    /* font-size: 16px !important; */
-}
-
 strong, .cm-strong
 {
     font-weight: 700 !important;
@@ -246,13 +277,14 @@ strong, .cm-strong
 
 /* List Indentations */
 ul {
-  padding-left:15px;
+  padding-left: 15px;
 }
 
 ol {
-  padding-left:15px;
+  padding-left: 15px;
 }
 
+/* Remove link underlines */
 .markdown-preview-view a.internal-link,
 .markdown-preview-view a.external-link,
 .cm-s-obsidian span.cm-hmd-internal-link
@@ -269,6 +301,7 @@ ol {
   text-decoration: none;
 }
 
+/* Color Links */
 .markdown-preview-view a.internal-link,
 .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-hmd-internal-link,
@@ -315,7 +348,8 @@ a.tag, a.tag:hover {
 
 mark
 {
-    background-color: var(--text-mark) !important;
+  color: var(--text-normal);
+  background-color: var(--text-mark) !important;
 }
 
 
@@ -396,12 +430,6 @@ thead
     line-height: normal !important;
     padding-left: 4px !important;
     padding-right: 4px !important;
-    /* background-color: var(--pre-code) !important; */
-}
-
-.HyperMD-table-row-0
-{
-    /* padding-top: 4px !important; */
 }
 
 table,
@@ -481,20 +509,12 @@ table,
 
 .admonition code,
 div.admonition-content-holder code {
-    /* removed 2023-01-25, to better match overall with admonition colors */
-    /* color: var(--inline-code) !important; */
+    color: var(--inline-code) !important;
     background-color: var(--pre-code) !important;
     border-radius: 2px;
     font-family: var(--font-monospace);
     font-size: var(--size-code);
 }
-
-/* fixes normal text in previewed formatted codeblocks from getting set to intellij orange color */
-/* div.admonition-content-holder code.is-loaded,
-div.admonition-content-holder pre code.is-loaded,
-.admonition pre code {
-    color: var(--code-normal) !important;
-} */
 
 div.admonition-title-markdown code {
     font-family: var(--font-monospace);
@@ -510,11 +530,6 @@ code {
 .callout-content {
   padding-left: 5px !important;
 }
-
-/* .markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul,
-.markdown-rendered ul, .markdown-rendered ol {
-    padding-inline-start: 1.7em;
-} */
 
 .workspace-leaf-header-title
 {
@@ -758,102 +773,92 @@ code {
 }
 
 .cm-s-obsidian .HyperMD-header-1 .cm-hmd-internal-link span.cm-underline {
-  /* --text-title-h1 with transparency */
-  /* dotted style: */
-  /* background-image: linear-gradient(to right, var(--text-title-h3) 75%, transparent 75%); */
-  background-image: linear-gradient(to right, rgba(188,1,4,0.4) 75%, rgba(188,1,4,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h1-link-ul-color) 75%, var(--h1-link-ul-color) 75%);
 }
 
 .cm-s-obsidian .HyperMD-header-1 .cm-hmd-internal-link span.cm-underline:hover {
-  color: rgb(203,16,19) !important; /* added 15 to each rgb value from above */
+  color: var(--h1-link-hover-color) !important;
 }
 
 .cm-s-obsidian .HyperMD-header-2 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, rgba(205,43,17,0.4) 75%, rgba(205,43,17,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h2-link-ul-color) 75%, var(--h2-link-ul-color) 75%);
 }
 
 .cm-s-obsidian .HyperMD-header-2 .cm-hmd-internal-link span.cm-underline:hover {
-  color: rgb(220,58,32) !important; /* added 15 to each rgb value from above */
+  color: var(--h2-link-hover-color) !important;
 }
 
 .cm-s-obsidian .HyperMD-header-3 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, rgba(237,91,15,0.4) 75%, rgba(237,91,15,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h3-link-ul-color) 75%, var(--h3-link-ul-color) 75%);
 }
 
 .cm-s-obsidian .HyperMD-header-3 .cm-hmd-internal-link span.cm-underline:hover {
-  color: rgb(252,106,30) !important; /* added 15 to each rgb value from above */
+  color: var(--h3-link-hover-color) !important;
 }
 
 .cm-s-obsidian .HyperMD-header-4 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, rgba(254,117,14,0.4) 75%, rgba(254,117,14,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h4-link-ul-color) 75%, var(--h4-link-ul-color) 75%);
 }
 
 .cm-s-obsidian .HyperMD-header-4 .cm-hmd-internal-link span.cm-underline:hover {
-  color: rgb(255,132,29) !important; /* added 15 to each rgb value from above */
+  color: var(--h4-link-hover-color) !important;
 }
 
 .cm-s-obsidian .HyperMD-header-5 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, rgba(254,145,9,0.4) 75%, rgba(254,145,9,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h5-link-ul-color) 75%, var(--h5-link-ul-color) 75%);
 }
 
 .cm-s-obsidian .HyperMD-header-5 .cm-hmd-internal-link span.cm-underline:hover {
-  color: rgb(255,160,24) !important; /* added 15 to each rgb value from above */
+  color: var(--h5-link-hover-color) !important;
 }
 
 .cm-s-obsidian .HyperMD-header-6 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, rgba(114,80,75,0.4) 75%, rgba(114,80,75,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h6-link-ul-color) 75%, var(--h6-link-ul-color) 75%);
 }
 
 .cm-s-obsidian .HyperMD-header-6 .cm-hmd-internal-link span.cm-underline:hover {
-  color: rgb(129,95,90) !important; /* added 15 to each rgb value from above */
+  color: var(--h6-link-hover-color) !important;
+}
+
+.markdown-preview-section h1 a.internal-link,
+.markdown-preview-section h2 a.internal-link,
+.markdown-preview-section h3 a.internal-link,
+.markdown-preview-section h4 a.internal-link,
+.markdown-preview-section h5 a.internal-link,
+.markdown-preview-section h6 a.internal-link {
+  background-position: 0 1.04em;
+  background-repeat: repeat-x;
+  background-size: 8px 2px;
 }
 
 .markdown-preview-section h1 a.internal-link {
   color: var(--text-title-h1) !important;
-  background-position: 0 1.04em;
-  background-repeat: repeat-x;
-  background-size: 8px 2px;
-  background-image: linear-gradient(to right, rgba(188,1,4,0.4) 75%, rgba(188,1,4,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h1-link-ul-color) 75%, var(--h1-link-ul-color) 75%);
 }
 
 .markdown-preview-section h2 a.internal-link {
   color: var(--text-title-h2) !important;
-  background-position: 0 1.04em;
-  background-repeat: repeat-x;
-  background-size: 8px 2px;
-  background-image: linear-gradient(to right, rgba(205,43,17,0.4) 75%, rgba(205,43,17,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h2-link-ul-color) 75%, var(--h2-link-ul-color) 75%);
 }
 
 .markdown-preview-section h3 a.internal-link {
   color: var(--text-title-h3) !important;
-  background-position: 0 1.04em;
-  background-repeat: repeat-x;
-  background-size: 8px 2px;
-  background-image: linear-gradient(to right, rgba(237,91,15,0.4) 75%, rgba(237,91,15,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h3-link-ul-color) 75%, var(--h3-link-ul-color) 75%);
 }
 
 .markdown-preview-section h4 a.internal-link {
   color: var(--text-title-h4) !important;
-  background-position: 0 1.04em;
-  background-repeat: repeat-x;
-  background-size: 8px 2px;
-  background-image: linear-gradient(to right, rgba(254,117,14,0.4) 75%, rgba(254,117,14,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h3-link-ul-color) 75%, var(--h3-link-ul-color) 75%);
 }
 
 .markdown-preview-section h5 a.internal-link {
   color: var(--text-title-h5) !important;
-  background-position: 0 1.04em;
-  background-repeat: repeat-x;
-  background-size: 8px 2px;
-    background-image: linear-gradient(to right, rgba(254,145,9,0.4) 75%, rgba(254,145,9,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h5-link-ul-color) 75%, var(--h5-link-ul-color) 75%);
 }
 
 .markdown-preview-section h6 a.internal-link {
   color: var(--text-title-h6) !important;
-  background-position: 0 1.04em;
-  background-repeat: repeat-x;
-  background-size: 8px 2px;
-  background-image: linear-gradient(to right, rgba(114,80,75,0.4) 75%, rgba(114,80,75,0.4) 75%);
+  background-image: linear-gradient(to right, var(--h6-link-ul-color) 75%, var(--h6-link-ul-color) 75%);
 }
 
 .markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
