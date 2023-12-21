@@ -905,6 +905,11 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
   margin-bottom: 0.5em !important;
 }
 
+/* remove collapse indicators inside preview callouts */
+.markdown-preview-view .collapse-indicator {
+  opacity: 0 !important;
+}
+
 /* margins for source view callouts (non-nested) */
 /* this specific selector prevents strange behavior with the hover outline including margins */
 /* the commented selector caused this behavior evidently */
