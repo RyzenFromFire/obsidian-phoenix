@@ -900,7 +900,6 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 }
 
 /* standardize space between callouts inside callouts */
-.admonition,
 .callout-content .callout {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
