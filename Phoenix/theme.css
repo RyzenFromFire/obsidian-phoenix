@@ -80,7 +80,6 @@ Adapted from the gruvbox and Atom themes.
     --r-bg-highlight:     color-mix(in srgb, var(--r-yellow-orange) 50%, transparent);
     --r-bg-selection:     color-mix(in srgb, var(--r-dark-orange) 25%, transparent);
     --r-pdf-highlight:    var(--r-bright-orange);
-
 }
 
 /*
@@ -770,53 +769,40 @@ code {
   background-position: 0 1.04em;
   background-repeat: repeat-x;
   background-size: 8px 2px;
+  background-image: linear-gradient(
+    to right, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+  );
 }
 
-.cm-s-obsidian .HyperMD-header-1 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, var(--h1-link-ul-color) 75%, var(--h1-link-ul-color) 75%);
-}
-
-.cm-s-obsidian .HyperMD-header-1 .cm-hmd-internal-link span.cm-underline:hover {
+.cm-s-obsidian .HyperMD-header-1 .cm-hmd-internal-link span.cm-underline:hover,
+.markdown-preview-section h1 a.internal-link:hover {
   color: var(--h1-link-hover-color) !important;
 }
 
-.cm-s-obsidian .HyperMD-header-2 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, var(--h2-link-ul-color) 75%, var(--h2-link-ul-color) 75%);
-}
-
-.cm-s-obsidian .HyperMD-header-2 .cm-hmd-internal-link span.cm-underline:hover {
+.cm-s-obsidian .HyperMD-header-2 .cm-hmd-internal-link span.cm-underline:hover,
+.markdown-preview-section h2 a.internal-link:hover {
   color: var(--h2-link-hover-color) !important;
 }
 
-.cm-s-obsidian .HyperMD-header-3 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, var(--h3-link-ul-color) 75%, var(--h3-link-ul-color) 75%);
-}
-
-.cm-s-obsidian .HyperMD-header-3 .cm-hmd-internal-link span.cm-underline:hover {
+.cm-s-obsidian .HyperMD-header-3 .cm-hmd-internal-link span.cm-underline:hover,
+.markdown-preview-section h3 a.internal-link:hover {
   color: var(--h3-link-hover-color) !important;
 }
 
-.cm-s-obsidian .HyperMD-header-4 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, var(--h4-link-ul-color) 75%, var(--h4-link-ul-color) 75%);
-}
-
-.cm-s-obsidian .HyperMD-header-4 .cm-hmd-internal-link span.cm-underline:hover {
+.cm-s-obsidian .HyperMD-header-4 .cm-hmd-internal-link span.cm-underline:hover,
+.markdown-preview-section h4 a.internal-link:hover {
   color: var(--h4-link-hover-color) !important;
 }
 
-.cm-s-obsidian .HyperMD-header-5 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, var(--h5-link-ul-color) 75%, var(--h5-link-ul-color) 75%);
-}
-
-.cm-s-obsidian .HyperMD-header-5 .cm-hmd-internal-link span.cm-underline:hover {
+.cm-s-obsidian .HyperMD-header-5 .cm-hmd-internal-link span.cm-underline:hover,
+.markdown-preview-section h5 a.internal-link:hover {
   color: var(--h5-link-hover-color) !important;
 }
 
-.cm-s-obsidian .HyperMD-header-6 .cm-hmd-internal-link span.cm-underline {
-  background-image: linear-gradient(to right, var(--h6-link-ul-color) 75%, var(--h6-link-ul-color) 75%);
-}
-
-.cm-s-obsidian .HyperMD-header-6 .cm-hmd-internal-link span.cm-underline:hover {
+.cm-s-obsidian .HyperMD-header-6 .cm-hmd-internal-link span.cm-underline:hover,
+.markdown-preview-section h6 a.internal-link:hover {
   color: var(--h6-link-hover-color) !important;
 }
 
@@ -829,50 +815,26 @@ code {
   background-position: 0 1.04em;
   background-repeat: repeat-x;
   background-size: 8px 2px;
+  color: inherit !important;
+  background-image: linear-gradient(
+    to right, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+  );
 }
 
-.markdown-preview-section h1 a.internal-link {
-  color: var(--text-title-h1) !important;
-  background-image: linear-gradient(to right, var(--h1-link-ul-color) 75%, var(--h1-link-ul-color) 75%);
-}
-
-.markdown-preview-section h2 a.internal-link {
-  color: var(--text-title-h2) !important;
-  background-image: linear-gradient(to right, var(--h2-link-ul-color) 75%, var(--h2-link-ul-color) 75%);
-}
-
-.markdown-preview-section h3 a.internal-link {
-  color: var(--text-title-h3) !important;
-  background-image: linear-gradient(to right, var(--h3-link-ul-color) 75%, var(--h3-link-ul-color) 75%);
-}
-
-.markdown-preview-section h4 a.internal-link {
-  color: var(--text-title-h4) !important;
-  background-image: linear-gradient(to right, var(--h3-link-ul-color) 75%, var(--h3-link-ul-color) 75%);
-}
-
-.markdown-preview-section h5 a.internal-link {
-  color: var(--text-title-h5) !important;
-  background-image: linear-gradient(to right, var(--h5-link-ul-color) 75%, var(--h5-link-ul-color) 75%);
-}
-
-.markdown-preview-section h6 a.internal-link {
-  color: var(--text-title-h6) !important;
-  background-image: linear-gradient(to right, var(--h6-link-ul-color) 75%, var(--h6-link-ul-color) 75%);
-}
-
-.markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
+.markdown-preview-view h1, 
+.markdown-preview-view h2, 
+.markdown-preview-view h3, 
+.markdown-preview-view h4, 
+.markdown-preview-view h5, 
+.markdown-preview-view h6 {
     margin: 0 0;
     padding: 0px 2px 4px 4px;
 }
 
 
 /* admonition settings */
-
-/* reduce top and bottom margins on Admonitions */
-.admonition {
-  margin: 0.1em 0 !important;
-}
 
 /* make overflow visible */
 /* I determined that this makes the weird behavior with admonitions not closing fully.
@@ -888,22 +850,69 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 }
 
 /* format links properly */
-.admonition-content a.internal-link,
-.admonition-content a.external-link,
 .markdown-source-view.mod-cm6 .cm-link .cm-underline,
 .markdown-source-view.mod-cm6 .cm-url .cm-underline {
   text-decoration: none;
 }
 
 .admonition-title-markdown a.internal-link,
-.admonition-title-markdown a.external-link {
+.admonition-title-markdown a.external-link,
+.callout-title-inner a.internal-link,
+.callout-title-inner a.external-link {
   text-decoration: none;
+  color: inherit !important;
+  background-position: 0.5em 1.04em;
+  background-repeat: repeat-x;
+  background-size: 4px 2px;
+  background-image: linear-gradient(
+    to right, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+    color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+  );
+}
+
+.admonition-title-markdown a.internal-link:hover,
+.admonition-title-markdown a.external-link:hover,
+.callout-title-inner a.internal-link:hover,
+.callout-title-inner a.external-link:hover {
+  /* the two things below *should* work, but don't */
+  /* color: color-mix(in srgb, currentColor 75%, white) !important;   */
+  /* color: color-mix(in srgb, white 25%, var(--callout-color)) !important; */
+  filter: brightness(1.2);
+}
+
+.admonition-content a.internal-link,
+.admonition-content a.external-link,
+.callout-content a.internal-link,
+.callout-content a.external-link {
+  text-decoration: none;
+}
+
+/* add space between adm/callout title and body in preview mode */
+.markdown-preview-view .callout-title {
+  margin-bottom: 0.3em;
 }
 
 
 /* format callout titles with a little more spacing */
 .callout-title {
   gap: var(--size-2-3);
+}
+
+/* standardize space between callouts inside callouts */
+.admonition,
+.callout-content .callout {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* margins for source view callouts (non-nested) */
+/* this specific selector prevents strange behavior with the hover outline including margins */
+/* the commented selector caused this behavior evidently */
+/*.markdown-source-view.mod-cm6 .callout*/
+.markdown-source-view.mod-cm6 .cm-embed-block {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
 }
 
 /* fixes for admonition codeblocks */
@@ -916,6 +925,26 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 .is-live-preview .admonition-content .math-block>mjx-container {
   padding: 15px 0px 15px 0px !important;
 }
+
+/* fix header mathjax not colored when in header in live preview */
+.HyperMD-header-1 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h1)
+} 
+.HyperMD-header-2 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h2)
+} 
+.HyperMD-header-3 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h3)
+} 
+.HyperMD-header-4 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h4)
+} 
+.HyperMD-header-5 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h5)
+} 
+.HyperMD-header-6 span.math mjx-math.MJX-TEX {
+  color: var(--text-title-h6)
+} 
 
 /* Fixes embeds being like 2/3 length */
 .markdown-embed div.admonition-parent {
@@ -962,8 +991,6 @@ li.task-list-item[data-task="x"] a.internal-link,
 }
 
 /* various list fixes for preview view/export */
-
-
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul,
 .markdown-rendered ul, .markdown-rendered ol {
   /*text-indent: 1em !important;*/
@@ -987,4 +1014,65 @@ li.task-list-item[data-task="x"] a.internal-link,
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul ul {
   margin-bottom: 0;
+}
+
+/* remove embed title */
+.embed-title.markdown-embed-title {
+  color: transparent;
+  height: 0;
+  padding: 0;
+}
+
+/* fixes for strange embed padding */
+.markdown-source-view .markdown-embed, .markdown-preview-view .markdown-embed,
+.markdown-preview-view.markdown-rendered.node-insert-event.show-indentation-guide.allow-fold-headings.allow-fold-lists {
+  /* padding-top: 5px; */
+  padding-top: 0 !important;
+  padding-right: 0px !important;
+  padding-inline-end: 0 !important;
+  scroll-padding-right: 0 !important;
+  padding-bottom: 1px !important;
+}
+
+.markdown-source-view .markdown-preview-sizer.markdown-preview-section {
+  margin-right: -7px;
+}
+
+.markdown-embed-link {
+  margin: 4px;
+}
+
+.markdown-embed-content.node-insert-event .callout {
+  margin-top: 0.3em !important;
+  margin-bottom: 0.3em !important;
+}
+
+.markdown-preview-view .markdown-embed {
+  margin-right: -7px !important;
+}
+
+.markdown-preview-view .markdown-embed .markdown-embed-link {
+  margin-right: 12px;
+}
+
+/* end fixes for strange embed padding */
+
+/* remove blockquote-like border on embeds in preview mode */
+body {
+  --embed-border-left: none !important;
+}
+
+/* standardize callout icon width and center items */
+.callout-icon {
+  width: 20px;
+}
+
+.callout-icon svg {
+  margin: auto;
+}
+
+/* slightly reduce left side padding of callout to counter new icon width */
+/* default is var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6) */
+body {
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-5);
 }
