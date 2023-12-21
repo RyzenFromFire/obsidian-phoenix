@@ -1082,3 +1082,8 @@ body {
 .is-live-preview .admonition-content:last-child {
   margin-bottom: 0;
 }
+
+/* fix code background color in callouts */
+body {
+  --code-background: var(--default-codeblock)
+}
