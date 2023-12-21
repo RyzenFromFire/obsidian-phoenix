@@ -1071,3 +1071,14 @@ body {
 body {
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-5);
 }
+
+/* adjust padding of task/checkbox lists inside callouts */
+.callout-content ul.contains-task-list {
+  padding-left: 0;
+  padding-top: var(--size-4-1);
+}
+
+/* remove trailing bottom margin on codeblock-type admonitions */
+.is-live-preview .admonition-content:last-child {
+  margin-bottom: 0;
+}
