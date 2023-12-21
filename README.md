@@ -3,7 +3,7 @@ My personal CSS theme for [Obsidian](https://obsidian.md).
 
 Mostly red, orange, yellow, grey, and black color palette.
 
-Compatibility: Obsidian v1.4.14
+Compatibility: Obsidian v1.4.16
 
 Modified from the [gruvbox](https://github.com/insanum/obsidian_gruvbox) and [Atom](https://github.com/kognise/obsidian-atom) themes.
 Created with occasional assistance from the [Obsidian community discord](https://obsidian.md/community).
