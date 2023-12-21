@@ -525,11 +525,6 @@ code {
   border-radius: 3px;
 }
 
-/* fix numbers being cut off in lists in callouts */
-.callout-content {
-  padding-left: 5px !important;
-}
-
 .workspace-leaf-header-title
 {
     font-weight: 600 !important;
@@ -844,10 +839,6 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 .admonition-content {
     overflow-x: visible !important;
 }*/
-/* This fix also works for the above issue, and became necessary again in Obsidian 1.0.0.*/
-.callout-content {
-  padding-left: 1px;
-}
 
 /* format links properly */
 .markdown-source-view.mod-cm6 .cm-link .cm-underline,
