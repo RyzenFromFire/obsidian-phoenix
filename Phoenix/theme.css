@@ -846,20 +846,36 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
   text-decoration: none;
 }
 
+/* format links in callout titles like header links */
 .admonition-title-markdown a.internal-link,
-.admonition-title-markdown a.external-link,
-.callout-title-inner a.internal-link,
-.callout-title-inner a.external-link {
+.callout-title-inner a.internal-link {
   text-decoration: none;
   color: inherit !important;
-  background-position: 0.5em 1.04em;
-  background-repeat: repeat-x;
-  background-size: 4px 2px;
   background-image: linear-gradient(
     to right, 
     color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
     color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
   );
+  background-position: 0.5em 1.04em;
+  background-repeat: repeat-x;
+  background-size: 4px 2px;
+}
+
+.admonition-title-markdown a.external-link,
+.callout-title-inner a.external-link {
+  text-decoration: none;
+  color: inherit !important;
+  background-image: 
+    url(public/images/874d8b8e340f75575caa.svg),
+    linear-gradient(
+      to right, 
+      color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
+      color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
+    );
+  background-position:  center right, 0.5em 1.04em;
+  background-position-y: 3px, 1.04em;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 13px, 4px 2px;
 }
 
 .admonition-title-markdown a.internal-link:hover,
