@@ -107,9 +107,9 @@ ______  ___  ______ _   __
     --text-title-h4:              var(--r-bright-yellow);
     --text-title-h5:              var(--r-yellow-green);
     --text-title-h6:              var(--r-mist-energy-blue);
-    --text-link:                  var(--r-dark-orange);
-    --text-link-hover:            var(--r-deep-orange);
-    --text-a:                     var(--r-bright-orange); /* also controls color of sidebar icons when hovered */
+    --text-link:                  var(--text-a); /* this is for external links */
+    --text-link-hover:            var(--text-a-hover);
+    --text-a:                     var(--r-bright-orange); /* this is for internal links */ /* also controls color of sidebar icons when hovered */
     --text-a-hover:               var(--r-yellow-orange);
     --text-mark:                  var(--r-bg-highlight);
     --text-highlight-bg:          var(--r-bg-highlight);
