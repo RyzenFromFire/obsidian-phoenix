@@ -3,7 +3,7 @@ My personal CSS theme for [Obsidian](https://obsidian.md).
 
 Mostly red, orange, yellow, grey, and black color palette, with a tinge of blue and green.
 
-Compatibility: Obsidian v1.4.16
+Latest verified compatible version: Obsidian v1.4.16 (older versions are not guaranteed to be functional, but most everything after 1.0.0 should be).
 
 Originally based the [gruvbox](https://github.com/insanum/obsidian_gruvbox) and [Atom](https://github.com/kognise/obsidian-atom) themes, heavily modified since.
 Created with occasional assistance from the [Obsidian community discord](https://obsidian.md/community).
@@ -11,7 +11,7 @@ Created with occasional assistance from the [Obsidian community discord](https:/
 This theme is primarily meant to be used in Live Preview (WYSIWYG) mode, so the preview side isn't as polished and may appear different than intended.
 
 ### Installation
-1. Download the `Phoenix` folder and place it in your `.obsidian\themes` folder.
+1. Download the latest zipped file from [Releases](https://github.com/RyzenFromFire/obsidian-phoenix/releases), extract, and place the `theme.css` and `manifest.json` in a folder named `Phoenix` in your `.obsidian\themes` folder.
 2. In Obsidian, under `Appearance` settings, under the `Themes` entry, select `Phoenix` from the dropdown menu.
 
 ### Recommended Snippets and Plugins
