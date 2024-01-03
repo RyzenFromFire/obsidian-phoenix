@@ -1115,3 +1115,30 @@ body {
 body {
   --code-background: var(--default-codeblock)
 }
+
+/* fix for Obsidian 1.5 indent change */
+/* removes additional indent from checkbox and bullet point lines */
+
+.cm-formatting-list-ul {
+  padding-inline-start: 0;
+}
+
+.markdown-source-view.mod-cm6 .task-list-item-checkbox {
+  margin-inline-start: 0.25em;
+}
+
+.cm-fold-indicator {
+  position: absolute;
+  translate: -1em;
+}
+
+/* begin fixes for "editing unordered list bullet point causes 4px padding decrease" */
+/* this kind of visual fix isn't feasible for checkboxes */
+/* this fix is unnecessary for and does not affect ordered/numbered lists */
+.HyperMD-list-line[class*="HyperMD-list-line-"].cm-line > span.cm-formatting.cm-formatting-list-ul[class*="cm-list-"]:not(:has(span.list-bullet)) {
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 1px;
+  min-width: 1em;
+}
+/* end fixes for "editing unordered list bullet point causes 4px padding decrease" */
