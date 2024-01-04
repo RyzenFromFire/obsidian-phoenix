@@ -1127,9 +1127,9 @@ body {
   margin-inline-start: 0.25em;
 }
 
-.cm-fold-indicator {
+[class*="HyperMD-list-line"] > .cm-fold-indicator {
   position: absolute;
-  translate: -1em;
+  translate: -0.5em;
 }
 
 /* begin fixes for "editing unordered list bullet point causes 4px padding decrease" */
