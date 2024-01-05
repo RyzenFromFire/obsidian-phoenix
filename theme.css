@@ -944,6 +944,24 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
   padding-bottom: 0.5em;
 }
 
+/* fix for embed block hover excess padding */
+/* remove existing hover box shadow around top level of callout */
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):hover {
+  box-shadow: none;
+  border-radius: 0;
+  overflow: hidden;
+  cursor: unset;
+}
+
+/* add same hover box shadow to sub-level of callout (below the padding added ~10 lines above) */
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget) > .markdown-rendered:hover {
+  box-shadow: var(--embed-block-shadow-hover);
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  cursor: text;
+}
+/* end fix for embed block hover excess padding */
+
 /* fixes for admonition codeblocks */
 .markdown-source-view.mod-cm6 .cm-embed-block pre {
   margin-top: 0.5em;
