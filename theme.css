@@ -934,14 +934,20 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 /* the commented selector caused this behavior evidently */
 /*.markdown-source-view.mod-cm6 .callout*/
 .markdown-source-view.mod-cm6 .cm-embed-block {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
+  /* using margins prevents the line above from being selectable due to codemirror hijinks */
+  /* must use padding instead, for live preview embed blocks specifically */
+  /* codeblock-style admonitions don't seem to be affected by this issue, */
+  /* and the margins for nested callouts ~15 lines above is not the same type of selector */
+  /* margin-top: 0.5em !important; */
+  /* margin-bottom: 0.5em !important; */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 /* fixes for admonition codeblocks */
 .markdown-source-view.mod-cm6 .cm-embed-block pre {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* fix mathjax formatting */
