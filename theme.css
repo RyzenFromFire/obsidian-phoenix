@@ -944,6 +944,14 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
   padding-bottom: 0.5em;
 }
 
+/* fix position of callout edit button </> that appears on hover */
+.markdown-source-view.mod-cm6 .edit-block-button {
+  padding: var(--size-2-3) var(--size-2-3);
+  position: absolute;
+  top: var(--size-4-3);
+  right: var(--size-2-2);
+}
+
 /* fix for embed block hover excess padding */
 /* remove existing hover box shadow around top level of callout */
 .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):hover {
