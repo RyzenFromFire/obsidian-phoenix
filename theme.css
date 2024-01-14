@@ -1058,8 +1058,8 @@ li.task-list-item[data-task="x"] a.internal-link,
 
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer p {
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
 }
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul {
