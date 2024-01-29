@@ -410,6 +410,11 @@ mark
     padding: 0px 0px;
 }
 
+/* uniform formatting for codeblocks in callouts */
+.markdown-rendered pre {
+  padding: var(--size-4-3) var(--size-4-4);
+}
+
 blockquote {
   margin: 10px 0;
   border-radius: 4px !important;
@@ -1175,3 +1180,4 @@ body {
   min-width: 1em;
 }
 /* end fixes for "editing unordered list bullet point causes 4px padding decrease" */
+
