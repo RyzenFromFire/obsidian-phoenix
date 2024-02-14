@@ -1155,9 +1155,10 @@ body {
 }
 
 /* fix for Obsidian 1.5 indent change */
-/* removes additional indent from checkbox and bullet point lines */
+/* removes additional indent from checkbox, bullet point, and enumeration lines */
 
-.cm-formatting-list-ul {
+.cm-formatting-list-ul,
+.cm-formatting-list-ol {
   padding-inline-start: 0;
 }
 
@@ -1180,4 +1181,9 @@ body {
   min-width: 1em;
 }
 /* end fixes for "editing unordered list bullet point causes 4px padding decrease" */
+
+/* reduce image border radius */
+body {
+  --img-border-radius: 2px !important;
+}
 
