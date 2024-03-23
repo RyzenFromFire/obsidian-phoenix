@@ -609,6 +609,7 @@ code {
 
 /* Header Settings */
 .cm-header-1,
+.cm-header-1 .cm-underline,
 .markdown-preview-section h1
 {
   font-weight: 500 !important;
@@ -617,6 +618,7 @@ code {
 }
 
 .cm-header-2,
+.cm-header-2 .cm-underline,
 .markdown-preview-section h2
 {
   font-weight: 500 !important;
@@ -624,6 +626,7 @@ code {
 }
 
 .cm-header-3,
+.cm-header-3 .cm-underline,
 .markdown-preview-section h3
 {
   font-weight: 500 !important;
@@ -631,6 +634,7 @@ code {
 }
 
 .cm-header-4,
+.cm-header-4 .cm-underline,
 .markdown-preview-section h4
 {
   font-weight: 500 !important;
@@ -638,6 +642,7 @@ code {
 }
 
 .cm-header-5,
+.cm-header-5 .cm-underline,
 .markdown-preview-section h5
 {
   font-weight: 500 !important;
@@ -645,6 +650,7 @@ code {
 }
 
 .cm-header-6,
+.cm-header-6 .cm-underline,
 .markdown-preview-section h6
 {
   font-weight: 500 !important;
@@ -770,7 +776,8 @@ code {
 }
 
 /* heading links */
-.cm-s-obsidian .HyperMD-header span.cm-underline {
+.cm-s-obsidian .HyperMD-header span.cm-underline,
+.cm-header .cm-underline {
   /*text-decoration-line: underline;*/
   /*background-image: linear-gradient(to right, var(--scorpion) 75%, transparent 75%);*/
   background-position: 0 1.04em;
@@ -784,31 +791,37 @@ code {
 }
 
 .cm-s-obsidian .HyperMD-header-1 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-1 .cm-underline:hover,
 .markdown-preview-section h1 a.internal-link:hover {
   color: var(--h1-link-hover-color) !important;
 }
 
 .cm-s-obsidian .HyperMD-header-2 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-2 .cm-underline:hover,
 .markdown-preview-section h2 a.internal-link:hover {
   color: var(--h2-link-hover-color) !important;
 }
 
 .cm-s-obsidian .HyperMD-header-3 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-3 .cm-underline:hover,
 .markdown-preview-section h3 a.internal-link:hover {
   color: var(--h3-link-hover-color) !important;
 }
 
 .cm-s-obsidian .HyperMD-header-4 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-4 .cm-underline:hover,
 .markdown-preview-section h4 a.internal-link:hover {
   color: var(--h4-link-hover-color) !important;
 }
 
 .cm-s-obsidian .HyperMD-header-5 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-5 .cm-underline:hover,
 .markdown-preview-section h5 a.internal-link:hover {
   color: var(--h5-link-hover-color) !important;
 }
 
 .cm-s-obsidian .HyperMD-header-6 .cm-hmd-internal-link span.cm-underline:hover,
+.cm-header-6 .cm-underline:hover,
 .markdown-preview-section h6 a.internal-link:hover {
   color: var(--h6-link-hover-color) !important;
 }
