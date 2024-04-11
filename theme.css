@@ -134,6 +134,7 @@ ______  ___  ______ _   __
   --interactive-normal:         var(--color-base-30);
   --callout-bg-darken-pct:      0%;
   --button-text-color:          var(--background-secondary-alt);
+  --graph-view-line-color:      var(--dark1);
 }
 
 /*
@@ -186,6 +187,7 @@ ______  ___  ______ _   __
   --interactive-hover:          var(--r-light0);
   --callout-bg-darken-pct:      5%;
   --button-text-color:          var(--text-on-accent);
+  --graph-view-line-color:      var(--light4);
 }
 
 /* 
@@ -265,6 +267,7 @@ ______  ___  ______ _   __
     background-color: var(--pre-code) !important;
 }
 
+/* Graph View */
 .graph-view.color-circle,
 .graph-view.color-fill-highlight,
 .graph-view.color-line-highlight
@@ -274,6 +277,11 @@ ______  ___  ______ _   __
 .graph-view.color-text
 {
     color: var(--text-a-hover) !important;
+}
+
+/* fix for graph view line colors */
+.graph-view.color-line {
+  color: var(--graph-view-line-color);
 }
 
 strong, .cm-strong
@@ -1199,4 +1207,3 @@ body {
 body {
   --img-border-radius: 2px !important;
 }
-
