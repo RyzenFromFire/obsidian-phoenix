@@ -881,7 +881,9 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 
 /* format links in callout titles like header links */
 .admonition-title-markdown a.internal-link,
-.callout-title-inner a.internal-link {
+.callout-title-inner a.internal-link,
+.admonition-title-markdown a.external-link,
+.callout-title-inner a.external-link {
   text-decoration: none;
   color: inherit !important;
   background-image: linear-gradient(
