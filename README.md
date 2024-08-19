@@ -11,6 +11,11 @@ Created with occasional assistance from the [Obsidian community discord](https:/
 This theme is primarily meant to be used in Live Preview (WYSIWYG) mode, so the preview side isn't as polished and may appear different than intended. Additionally, while the light theme is functional, I primarily use the dark theme, so I don't often update or notice issues with the light theme. Feel free to open an issue if you encounter a problem.
 
 ### Installation
+#### Automatic
+1. In Obsidian, under `Appearance` settings, click `Manage` under `Themes`, and search for `Phoenix`.
+2. Click on the entry for Phoenix, then click `Install and use`.
+
+#### Manual
 1. Download the latest zipped file from [Releases](https://github.com/RyzenFromFire/obsidian-phoenix/releases), extract, and place the `theme.css` and `manifest.json` in a folder named `Phoenix` in your `.obsidian\themes` folder.
 2. In Obsidian, under `Appearance` settings, under the `Themes` entry, select `Phoenix` from the dropdown menu.
 
