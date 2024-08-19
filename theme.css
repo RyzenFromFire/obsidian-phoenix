@@ -1079,7 +1079,7 @@ li.task-list-item[data-task="x"] a.internal-link,
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul,
 .markdown-rendered ul, .markdown-rendered ol {
   /*text-indent: 1em !important;*/
-  padding-inline-start: 1.5em;
+  padding-inline-start: 0.5em; /* formerly 1.5em */
 }
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer ul ul {
