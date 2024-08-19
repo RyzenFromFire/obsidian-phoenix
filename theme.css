@@ -1209,3 +1209,8 @@ body {
 body {
   --img-border-radius: 2px !important;
 }
+
+/* fix alignment issue with source mode properties collapse indicator with banner */
+.has-banner > .cm-fold-indicator > .collapse-indicator {
+  margin-top: 7px;
+}
