@@ -618,7 +618,9 @@ code {
 /* Header Settings */
 .cm-header-1,
 .cm-header-1 .cm-underline,
-.markdown-preview-section h1
+.markdown-preview-section h1,
+.markdown-preview-section h1 code,
+h1 a
 {
   font-weight: 500 !important;
   /*font-size: 2.2em !important;*/
@@ -627,7 +629,9 @@ code {
 
 .cm-header-2,
 .cm-header-2 .cm-underline,
-.markdown-preview-section h2
+.markdown-preview-section h2,
+.markdown-preview-section h2 code,
+h2 a
 {
   font-weight: 500 !important;
   color: var(--text-title-h2) !important;
@@ -635,7 +639,9 @@ code {
 
 .cm-header-3,
 .cm-header-3 .cm-underline,
-.markdown-preview-section h3
+.markdown-preview-section h3,
+.markdown-preview-section h3 code,
+h3 a
 {
   font-weight: 500 !important;
   color: var(--text-title-h3) !important;
@@ -643,7 +649,9 @@ code {
 
 .cm-header-4,
 .cm-header-4 .cm-underline,
-.markdown-preview-section h4
+.markdown-preview-section h4,
+.markdown-preview-section h4 code,
+h4 a
 {
   font-weight: 500 !important;
   color: var(--text-title-h4) !important;
@@ -651,7 +659,9 @@ code {
 
 .cm-header-5,
 .cm-header-5 .cm-underline,
-.markdown-preview-section h5
+.markdown-preview-section h5,
+.markdown-preview-section h5 code,
+h5 a
 {
   font-weight: 500 !important;
   color: var(--text-title-h5) !important;
@@ -659,34 +669,11 @@ code {
 
 .cm-header-6,
 .cm-header-6 .cm-underline,
-.markdown-preview-section h6
+.markdown-preview-section h6,
+.markdown-preview-section h6 code,
+h6 a
 {
   font-weight: 500 !important;
-  color: var(--text-title-h6) !important;
-}
-
-/* fix for colors in header codeblocks */
-.markdown-preview-section h1 code {
-  color: var(--text-title-h1) !important;
-}
-
-.markdown-preview-section h2 code {
-  color: var(--text-title-h2) !important;
-}
-
-.markdown-preview-section h3 code {
-  color: var(--text-title-h3) !important;
-}
-
-.markdown-preview-section h4 code {
-  color: var(--text-title-h4) !important;
-}
-
-.markdown-preview-section h5 code {
-  color: var(--text-title-h5) !important;
-}
-
-.markdown-preview-section h6 code {
   color: var(--text-title-h6) !important;
 }
 
