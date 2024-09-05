@@ -502,7 +502,7 @@ table,
 {
     padding: 4px !important;
     line-height: 1.4em !important;
-    display: block !important;
+    /* display: block !important; */ /* caused issue #2 (see github) */
     /*color: var(--code-block) !important;*/
 }
 
