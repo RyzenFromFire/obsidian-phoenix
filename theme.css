@@ -284,8 +284,9 @@ ______  ___  ______ _   __
   color: var(--graph-view-line-color);
 }
 
-strong, .cm-strong
+strong, .cm-strong, strong a, strong em a
 {
+    --font-weight: 700 !important;
     font-weight: 700 !important;
 }
 
@@ -427,6 +428,19 @@ blockquote {
   margin: 10px 0;
   border-radius: 4px !important;
 }
+
+/* reduce margins of preview mode blockquote */
+.markdown-preview-view :is(blockquote) {
+  margin: 0 0;
+  margin-bottom: 0.25em;
+}
+
+/* fix large space at end within blockquote */
+.markdown-rendered blockquote > p {
+  margin-bottom: 0.25em !important;
+}
+
+
 
 /* changes dropdown color, somewhere in that url: color: deep-orange/h3/ed5b0f */
 .dropdown {
