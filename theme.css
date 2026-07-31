@@ -953,8 +953,8 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 }
 
 /* fix for light theme callout title backgrounds */
-.callout {
-  background-color: color-mix(in srgb, #000000 var(--callout-bg-darken-pct), rgba(var(--callout-color), 0.1))
+.theme-light .callout {
+  background-color: color-mix(in oklch, var(--callout-color) 20%, var(--r-scorpion) 20%)
 }
 
 /* add space between adm/callout title and body in preview mode */
