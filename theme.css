@@ -1231,12 +1231,17 @@ body {
 /* begin fixes for "editing unordered list bullet point causes 4px padding decrease" */
 /* this kind of visual fix isn't feasible for checkboxes */
 /* this fix is unnecessary for and does not affect ordered/numbered lists */
-.HyperMD-list-line[class*="HyperMD-list-line-"].cm-line > span.cm-formatting.cm-formatting-list-ul[class*="cm-list-"]:not(:has(span.list-bullet)) {
+/* 
+As of 2026-09-20, this fix no longer appears to be necessary, and may instead be causing other issues. 
+Specifically, a visual glitch with the live preview editor forcing callout text after a newline 
+to be compacted into a column of single characters on the right side of the editor.
+*/
+/* .HyperMD-list-line[class*="HyperMD-list-line-"].cm-line > span.cm-formatting.cm-formatting-list-ul[class*="cm-list-"]:not(:has(span.list-bullet)) {
   display: inline-block;
   padding-left: 3px;
   padding-right: 1px;
   min-width: 1em;
-}
+} */
 /* end fixes for "editing unordered list bullet point causes 4px padding decrease" */
 
 /* reduce image border radius */
