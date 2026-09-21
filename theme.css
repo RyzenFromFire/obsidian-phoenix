@@ -644,7 +644,7 @@ code {
 .HyperMD-header-1 .cm-hmd-internal-link .cm-underline,
 h1 a
 {
-  font-weight: 500 !important;
+  font-weight: var(--h1-weight) !important;
   /*font-size: 2.2em !important;*/
   color: var(--text-title-h1) !important;
 }
@@ -656,7 +656,7 @@ h1 a
 .HyperMD-header-2 .cm-hmd-internal-link .cm-underline,
 h2 a
 {
-  font-weight: 500 !important;
+  font-weight: var(--h2-weight) !important;
   color: var(--text-title-h2) !important;
 }
 
@@ -667,7 +667,7 @@ h2 a
 .HyperMD-header-3 .cm-hmd-internal-link .cm-underline,
 h3 a
 {
-  font-weight: 500 !important;
+  font-weight: var(--h3-weight) !important;
   color: var(--text-title-h3) !important;
 }
 
@@ -678,7 +678,7 @@ h3 a
 .HyperMD-header-4 .cm-hmd-internal-link .cm-underline,
 h4 a
 {
-  font-weight: 500 !important;
+  font-weight: var(--h4-weight) !important;
   color: var(--text-title-h4) !important;
 }
 
@@ -689,7 +689,7 @@ h4 a
 .HyperMD-header-5 .cm-hmd-internal-link .cm-underline,
 h5 a
 {
-  font-weight: 500 !important;
+  font-weight: var(--h5-weight) !important;
   color: var(--text-title-h5) !important;
 }
 
@@ -700,18 +700,13 @@ h5 a
 .HyperMD-header-6 .cm-hmd-internal-link .cm-underline,
 h6 a
 {
-  font-weight: 500 !important;
+  font-weight: var(--h6-weight) !important;
   color: var(--text-title-h6) !important;
 }
 
 .suggestion-item.is-selected
 {
   background-color: var(--background-secondary);
-}
-
-.empty-state-action:hover
-{
-  color: var(--interactive-accent);
 }
 
 .empty-state-action:hover
