@@ -788,8 +788,21 @@ h6 a
 }
 
 /* increase tex size */
-.MJX-TEX {
+.MJX-TEX, .MathJax { /* .MJX-TEX class completely removed with Obsidian 1.14/MathJax 4.1.3, keeping for backwards compat */
 	font-size: 115%;
+}
+
+/* Obsidian 1.14/MathJax 4.1.3 fix for random scrollbars appearing */
+mjx-container[display="true"] {
+  overflow-y: hidden !important;
+  overflow-x: auto !important;
+}
+
+/* Fix for \big being the same as \Big, not sure if MathJax 4 or Obsidian 1.14 problem */
+mjx-texatom[data-latex*="\\big"]:not(mjx-texatom[data-latex*="\\bigg"]),
+mjx-mo[data-latex*="\\big"]:not(mjx-mo[data-latex*="\\bigg"]) {
+  font-size: 0.8em;
+  vertical-align: 0.02em;
 }
 
 /* heading links */
@@ -1027,22 +1040,22 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
 }
 
 /* fix header mathjax not colored when in header in live preview */
-.HyperMD-header-1 span.math mjx-math.MJX-TEX {
+.HyperMD-header-1 span.math mjx-math {
   color: var(--text-title-h1)
 } 
-.HyperMD-header-2 span.math mjx-math.MJX-TEX {
+.HyperMD-header-2 span.math mjx-math {
   color: var(--text-title-h2)
 } 
-.HyperMD-header-3 span.math mjx-math.MJX-TEX {
+.HyperMD-header-3 span.math mjx-math {
   color: var(--text-title-h3)
 } 
-.HyperMD-header-4 span.math mjx-math.MJX-TEX {
+.HyperMD-header-4 span.math mjx-math {
   color: var(--text-title-h4)
 } 
-.HyperMD-header-5 span.math mjx-math.MJX-TEX {
+.HyperMD-header-5 span.math mjx-math {
   color: var(--text-title-h5)
 } 
-.HyperMD-header-6 span.math mjx-math.MJX-TEX {
+.HyperMD-header-6 span.math mjx-math {
   color: var(--text-title-h6)
 } 
 
@@ -1227,9 +1240,7 @@ body {
 /* this kind of visual fix isn't feasible for checkboxes */
 /* this fix is unnecessary for and does not affect ordered/numbered lists */
 /* 
-As of 2026-09-20, this fix no longer appears to be necessary, and may instead be causing other issues. 
-Specifically, a visual glitch with the live preview editor forcing callout text after a newline 
-to be compacted into a column of single characters on the right side of the editor.
+As of 2026-09-20, this fix no longer appears to be necessary.
 */
 /* .HyperMD-list-line[class*="HyperMD-list-line-"].cm-line > span.cm-formatting.cm-formatting-list-ul[class*="cm-list-"]:not(:has(span.list-bullet)) {
   display: inline-block;
