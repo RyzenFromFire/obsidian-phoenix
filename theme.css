@@ -803,7 +803,7 @@ mjx-container[display="true"] {
 mjx-texatom[data-latex*="\\big"]:not(mjx-texatom[data-latex*="\\bigg"]):not([data-latex*="|"]):not([data-latex*="ert"]),
 mjx-mo[data-latex*="\\big"]:not(mjx-mo[data-latex*="\\bigg"]):not([data-latex*="|"]):not([data-latex*="ert"]){
   font-size: 0.8em;
-  vertical-align: 0.02em;
+  vertical-align: 0.08em;
 }
 
 /* Fix the issue of opening pipe delimiters having basically no right padding, so anything right after would be too close */
