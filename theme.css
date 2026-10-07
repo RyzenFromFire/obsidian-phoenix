@@ -799,10 +799,18 @@ mjx-container[display="true"] {
 }
 
 /* Fix for \big being the same as \Big, not sure if MathJax 4 or Obsidian 1.14 problem */
-mjx-texatom[data-latex*="\\big"]:not(mjx-texatom[data-latex*="\\bigg"]),
-mjx-mo[data-latex*="\\big"]:not(mjx-mo[data-latex*="\\bigg"]) {
+/* exclude pipes (`|` or `vert`) and double pipes (`\|` or `Vert`) as they are too small with this change */
+mjx-texatom[data-latex*="\\big"]:not(mjx-texatom[data-latex*="\\bigg"]):not([data-latex*="|"]):not([data-latex*="ert"]),
+mjx-mo[data-latex*="\\big"]:not(mjx-mo[data-latex*="\\bigg"]):not([data-latex*="|"]):not([data-latex*="ert"]){
   font-size: 0.8em;
   vertical-align: 0.02em;
+}
+
+/* Fix the issue of opening pipe delimiters having basically no right padding, so anything right after would be too close */
+/* this may also add some extra padding on the right side of these delimiters, but that's fine */
+mjx-stretchy-v.mjx-c7C, mjx-stretchy-v.mjx-c2016,
+mjx-c.mjx-c7C, mjx-c.mjx-c2016 {
+  padding-right: 0.12em;
 }
 
 /* heading links */
