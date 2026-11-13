@@ -20,15 +20,15 @@ This theme is primarily meant to be used in Live Preview (WYSIWYG) mode, so the 
 2. In Obsidian, under `Appearance` settings, under the `Themes` entry, select `Phoenix` from the dropdown menu.
 
 ### Recommended Snippets and Plugins
-I recommend using the following snippets for the best experience:
+I recommend using the following snippets and plugins for the best experience:
 - [Phoenix Checkboxes](https://github.com/RyzenFromFire/obsidian-phoenix-checkboxes)
 - [Phoenix Print](https://github.com/RyzenFromFire/obsidian-phoenix-print)
 - [Phoenix Callouts](https://github.com/RyzenFromFire/obsidian-phoenix-callouts)
 - [Phoenix File Outlines](https://github.com/RyzenFromFire/obsidian-phoenix-outlines)
 - [Custom Icons Differing Files and Folders](https://github.com/kmaasrud/awesome-obsidian/blob/master/code/css-snippets/custom-icons-differing-files-and-folders.css)
 - [Subtler Folding Gutter Arrows](https://github.com/kmaasrud/awesome-obsidian/blob/master/code/css-snippets/subtler-folding-gutter-arrows.css)
-- [Editor Syntax Highlighting](https://github.com/deathau/cm-editor-syntax-highlight-obsidian)
-- [LaTeX Environments](https://github.com/raineszm/obsidian-latex-environments)
+- [Shiki Highlighter](https://github.com/mprojectscode/obsidian-shiki-plugin)
+- [Admonition](https://github.com/ebullient/obsidian-admonition)
 
 ### Screenshots
 ###### Edit Mode
