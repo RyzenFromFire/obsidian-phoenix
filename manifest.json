@@ -1,7 +1,7 @@
 {
    "name": "Phoenix",
-   "version": "2.3.2",
-   "minAppVersion": "1.0.0",
+   "version": "2.3.3",
+   "minAppVersion": "1.14.0",
    "author": "RyzenFromFire",
    "authorUrl": "https://github.com/RyzenFromFire"
 }
