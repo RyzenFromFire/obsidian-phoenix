@@ -27,7 +27,7 @@ I recommend using the following snippets and plugins for the best experience:
 - [Phoenix File Outlines](https://github.com/RyzenFromFire/obsidian-phoenix-outlines)
 - [Custom Icons Differing Files and Folders](https://github.com/kmaasrud/awesome-obsidian/blob/master/code/css-snippets/custom-icons-differing-files-and-folders.css)
 - [Subtler Folding Gutter Arrows](https://github.com/kmaasrud/awesome-obsidian/blob/master/code/css-snippets/subtler-folding-gutter-arrows.css)
-- [Shiki Highlighter](https://github.com/mprojectscode/obsidian-shiki-plugin)
+- [Shiki Highlighter](https://github.com/mprojectscode/obsidian-shiki-plugin) (see also my [Shadowborn Theme for VSCode](https://github.com/RyzenFromFire/vscode-shadowborn) which is compatible with Shiki Highlighter)
 - [Admonition](https://github.com/ebullient/obsidian-admonition)
 
 ### Screenshots
